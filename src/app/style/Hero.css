@@ -1,0 +1,144 @@
+.home-content {
+  background-color: #162f61;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%; 
+}
+
+.text-section {
+  flex: 1 1 100%; 
+  text-align: left;
+}
+
+.home-title {
+  font-size: 20px;
+  font-weight: 5000;
+  margin-bottom: 1rem;
+  text-align: left; 
+}
+
+.home-description {
+  font-size: 22px;
+  color: #ffffff;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.image-section {
+  flex: 1 1 100%; 
+  display: flex;
+  justify-content: center; 
+  
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+.home-button {
+  background-color: skyblue;
+  color: #2d3748;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #e5b005;
+}
+
+/* Responsive Styles */
+
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-section {
+    text-align: left;
+    width: 50%;
+  }
+
+  .image-section {
+    width: 50%;
+    margin-top: 130px;
+  }
+
+  .button-section {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+  .hero-section {
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%; 
+  }
+
+  .home-title {
+    font-size: 1.5rem;
+  }
+
+  .home-description {
+    font-size: 18px; 
+  }
+
+  .button-section {
+    flex-direction: column; 
+    width: 100%;
+  }
+
+  .home-button {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+}
+
+/* Large Desktop (optional) */
+@media (min-width: 1200px) {
+  .hero-section {
+    gap: 3rem;
+  }
+ .image-section{
+  width: 200%;
+ }
+  .home-title {
+    font-size: 2.5rem; 
+  }
+
+  .home-description {
+    font-size: 24px;
+  }
+}

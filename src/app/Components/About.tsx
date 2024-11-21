@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import "../style/About.css"
+import "../style/About.css";
 const About = () => {
   return (
     <div className="about-page">
@@ -14,18 +14,18 @@ const About = () => {
         <div className="team">
           
           <div className="team-member">
-          <Image src="/pr-2.jpeg" alt="Portrait of team member one" width={500} height={300} />
+          <Image src="/Images/pr-2.jpeg" alt="Portrait of team member one" width={500} height={300} />
             <h3 className="team-member-name">Sobia Khan</h3>
             <p className="team-member-role">Senior Designer</p>
           </div>
           <div className="team-member">
-          <Image src="/pr-1.jpeg" alt="Portrait of team member one" width={500} height={300} />
+          <Image src="/Images/pr-1.jpeg" alt="Portrait of team member one" width={500} height={300} />
         
             <h3 className="team-member-name">Muhammad Shafique</h3>
             <p className="team-member-role">Lead Developer</p>
           </div>
           <div className="team-member">
-          <Image src="/pr-3.jpeg" alt="Portrait of team member one" width={500} height={300} />
+          <Image src="/Images/pr-3.jpeg" alt="Portrait of team member one" width={500} height={300} />
             <h3 className="team-member-name">Aliza Shah</h3>
             <p className="team-member-role">Project Manager</p>
           </div>
